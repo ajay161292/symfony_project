@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '@symfony/webpack-encore',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ '@symfony/webpack-encore', null ]
+6 verbose cache add name=undefined spec="@symfony/webpack-encore" args=["@symfony/webpack-encore",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '@symfony/webpack-encore',
+7 verbose parsed url   path: '@symfony/webpack-encore',
+7 verbose parsed url   href: '@symfony/webpack-encore' }
+8 verbose cache add name="" spec="symfony/webpack-encore" args=["","symfony/webpack-encore"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'symfony/webpack-encore',
+9 verbose parsed url   path: 'symfony/webpack-encore',
+9 verbose parsed url   href: 'symfony/webpack-encore' }
+10 silly lockFile 3a2d349e-symfony-webpack-encore symfony/webpack-encore
+11 verbose lock symfony/webpack-encore C:\Users\Ajay's\AppData\Roaming\npm-cache\3a2d349e-symfony-webpack-encore.lock
+12 info maybeGithub Attempting symfony/webpack-encore from git://github.com/symfony/webpack-encore
+13 silly lockFile dde27422-ithub-com-symfony-webpack-encore git://github.com/symfony/webpack-encore
+14 verbose lock git://github.com/symfony/webpack-encore C:\Users\Ajay's\AppData\Roaming\npm-cache\dde27422-ithub-com-symfony-webpack-encore.lock
+15 verbose addRemoteGit [ 'git://github.com/symfony/webpack-encore', 'master' ]
+16 silly lockFile dde27422-ithub-com-symfony-webpack-encore git://github.com/symfony/webpack-encore
+17 silly lockFile dde27422-ithub-com-symfony-webpack-encore git://github.com/symfony/webpack-encore
+18 info maybeGithub Attempting symfony/webpack-encore from git+ssh://git@github.com:symfony/webpack-encore
+19 silly lockFile f9340cda-ithub-com-symfony-webpack-encore git@github.com:symfony/webpack-encore
+20 verbose lock git@github.com:symfony/webpack-encore C:\Users\Ajay's\AppData\Roaming\npm-cache\f9340cda-ithub-com-symfony-webpack-encore.lock
+21 verbose addRemoteGit [ 'git@github.com:symfony/webpack-encore', 'master' ]
+22 silly lockFile f9340cda-ithub-com-symfony-webpack-encore git@github.com:symfony/webpack-encore
+23 silly lockFile f9340cda-ithub-com-symfony-webpack-encore git@github.com:symfony/webpack-encore
+24 silly lockFile 3a2d349e-symfony-webpack-encore symfony/webpack-encore
+25 silly lockFile 3a2d349e-symfony-webpack-encore symfony/webpack-encore
+26 error addLocal Could not install symfony/webpack-encore
+27 error Error: ENOENT, stat 'C:\xampp\htdocs\symfony_project\symfony\webpack-encore'
+28 error If you need help, you may report this *entire* log,
+28 error including the npm and node versions, at:
+28 error     <http://github.com/npm/npm/issues>
+29 error System Windows_NT 6.1.7601
+30 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "@symfony/webpack-encore" "--save-dev"
+31 error cwd C:\xampp\htdocs\symfony_project
+32 error node -v v0.10.26
+33 error npm -v 1.4.3
+34 error path C:\xampp\htdocs\symfony_project\symfony\webpack-encore
+35 error code ENOENT
+36 error errno 34
+37 verbose exit [ 34, true ]

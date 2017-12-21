@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+{% block sidebar %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                {# {{dump(data)}} #}
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>ID</th><th>Name</th>
+                            <th>Gender</th><th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for d in data %}
+                            <tr>
+                                <td>{{d.empNo}}</td>
+                                <td>{{d.firstName}} {{d.lastName}}</td>
+                                <td>{{d.gender}}</td>
+                                <td>{{d.status}}</td>
+                                <td><a href="javascript:void(0)" onclick="deleteEmp({{d.empNo}})" value="{{d.empNo}}">Edit</a> | <a href="javascript:void(0)" onclick="deleteEmp({{d.empNo}})" value="{{d.empNo}}">Delete</a></td>
+
+                            </tr>
+                        {% endfor %}
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+<script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
+{# <link rel="stylesheet" href="{{ asset('plugins/bootstrap/min/bootstrap.min.css') }}"> #}
+<script type="text/javascript">
+    var deleteEmp = function(empid=""){
+        alert(empid);
+        if(confirm("Are You sute to delete this record?")){
+            $.ajax({
+                type: 'ajax',
+                async: false,
+                dataType: 'json',
+                method: 'post',
+                url: 'employee/edit/'+empid,
+                data: {id:empid},
+                success: function(response){
+                    console.log(response);return false;
+                },
+                error: function(){
+                    alert('Record not Deleted! Pleasse try again!');
+                }
+            })
+        }
+        else{
+            return false;
+        }
+    }
+</script>
+
+
+{% endblock %}
